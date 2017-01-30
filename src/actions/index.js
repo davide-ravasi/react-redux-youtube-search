@@ -3,9 +3,9 @@ const API_KEY = 'AIzaSyDhAE6OYXooquMA7AmyN8iUactQ2EnsGzM';
 
 export function searchWord(searchKey) {
 
-	const url = 'https://www.googleapis.com/youtube/v3/search?q=surfboard&part=snippet&order=rating&type=video&videoEmbeddable=true&key=AIzaSyDhAE6OYXooquMA7AmyN8iUactQ2EnsGzM';	
+	console.log('state actions: ' + searchKey)
 
-	const request = axios.get(url);
+	const url = 'https://www.googleapis.com/youtube/v3/search?q=' + searchKey + '&part=snippet&order=rating&type=video&videoEmbeddable=true&key=AIzaSyDhAE6OYXooquMA7AmyN8iUactQ2EnsGzM';	
 
 
 
@@ -19,10 +19,10 @@ export function searchWord(searchKey) {
  //        }
  //    );
 
-	console.log('videos after: ', videos);
+
 	return {
 		type: 'VIDEO_LIST',
-		payload: request 
+		payload: axios.get(url) 
 	}
 
 }

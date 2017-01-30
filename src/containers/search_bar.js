@@ -13,6 +13,7 @@ class SearchBar extends Component {
 		this.onSearchChange = this.onSearchChange.bind(this);
 		this.onSubmitForm = this.onSubmitForm.bind(this);
 
+		//this.props.searchWord('');
 	}
 
 
@@ -26,7 +27,6 @@ class SearchBar extends Component {
 		event.preventDefault();
 		console.log('on submit form: ' + this.state.term);
 		this.props.searchWord(this.state.term);
-		this.setState({term: ''});
 	}
 
 	

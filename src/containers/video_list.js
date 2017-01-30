@@ -6,24 +6,30 @@ import { searchWord } from '../actions/index';
 class VideoList extends Component {
 
 
-	constructor(props) {
-		super(props);
-
-		this.state = {
-			videos: []
-		};
-	}
-
 	renderList() {
+
+		console.log(this.props.videos);
+
+		if(this.props.videos.length > 0) {
+			return this.props.videos[0].items.map((video) =>{
+				return (
+
+					<li>{video.snippet.title}</li>
+				)
+				
+			});		
+		}
+
+		//this.props.setState({term: '',videos: ''});
+
 	}
 	
 	render() {
-		console.log('video list video states');
-		console.log(this.props.videos)
+		
 		return (
 			<div className="col-md-8">
 				<ul>
-					{this.renderList}
+					{this.renderList()}
 				</ul>
 			</div>
 		);
