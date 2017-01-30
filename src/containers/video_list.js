@@ -18,9 +18,8 @@ class VideoList extends Component {
 	}
 	
 	render() {
-		console.log('inside video_list');
-		console.log(this.props.videos);
-		console.log('end video_list');
+		console.log('video list video states');
+		console.log(this.props.videos)
 		return (
 			<div className="col-md-8">
 				<ul>
