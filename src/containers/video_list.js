@@ -15,7 +15,6 @@ class VideoList extends Component {
 	}
 
 	renderList() {
-		console.log('prova');
 	}
 	
 	render() {
