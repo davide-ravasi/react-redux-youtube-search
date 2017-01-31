@@ -14,13 +14,24 @@ class VideoList extends Component {
 			return this.props.videos[0].items.map((video) =>{
 				return (
 
-					<li>{video.snippet.title}</li>
+					<li className="list-group-item">
+						<div className="media">
+							<div className="media-left media-middle">
+								<a href="#">
+									<img className="media-object img-thumbnail" src={video.snippet.thumbnails.default.url} alt="..." />
+								</a>
+							</div>
+							<div className="media-body">
+								<h5 className="media-heading">{video.snippet.title}</h5>
+								{video.snippet.description}
+							</div>
+						</div>
+
+					</li>
 				)
 				
 			});		
 		}
-
-		//this.props.setState({term: '',videos: ''});
 
 	}
 	
@@ -28,7 +39,7 @@ class VideoList extends Component {
 		
 		return (
 			<div className="col-md-8">
-				<ul>
+				<ul className="list-group">
 					{this.renderList()}
 				</ul>
 			</div>
