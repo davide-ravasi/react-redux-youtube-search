@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import { searchWord } from '../actions/index';
+import ListElement from '../components/list_element';
 
 class VideoList extends Component {
 
@@ -14,20 +15,7 @@ class VideoList extends Component {
 			return this.props.videos[0].items.map((video) =>{
 				return (
 
-					<li className="list-group-item">
-						<div className="media">
-							<div className="media-left media-middle">
-								<a href="#">
-									<img className="media-object img-thumbnail" src={video.snippet.thumbnails.default.url} alt="..." />
-								</a>
-							</div>
-							<div className="media-body">
-								<h5 className="media-heading">{video.snippet.title}</h5>
-								{video.snippet.description}
-							</div>
-						</div>
-
-					</li>
+					<ListElement title={video.snippet.title} description={video.snippet.description} src={video.snippet.thumbnails.default.url}></ListElement>
 				)
 				
 			});		

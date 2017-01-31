@@ -14,3 +14,9 @@ export default class App extends Component {
     );
   }
 }
+
+
+
+// to do
+// - list initial
+// - detail video
