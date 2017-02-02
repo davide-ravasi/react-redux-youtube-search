@@ -16,19 +16,14 @@ class SearchBar extends Component {
 		//this.props.searchWord('');
 	}
 
-
 	onSearchChange(event) {
-		console.log(event.target.value);
-
 		this.setState({term: event.target.value});
 	}
 
 	onSubmitForm(event) {
 		event.preventDefault();
-		console.log('on submit form: ' + this.state.term);
 		this.props.searchWord(this.state.term);
 	}
-
 	
 	render() {
 		return (

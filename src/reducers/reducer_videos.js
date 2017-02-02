@@ -1,16 +1,14 @@
 export default function(state = [], action) {
 
 
-		switch (action.type) {
-			case 'VIDEO_LIST':
-			state = [];
-			return state.concat(action.payload.data);
-		}
-
+	switch (action.type) {
+		case 'VIDEO_LIST':
+		state = [];
+		return state.concat(action.payload.data);
+	}
 
 	//console.log('reducer state: ' + videoList);
 	//console.log(state);
-	console.log('state at the end of reducer ',state);
 	return state;
 }
 

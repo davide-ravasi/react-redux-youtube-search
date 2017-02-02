@@ -1,9 +1,7 @@
 import React, { Component } from 'react';
 
-
 export default (props) => {
 	return (
-		<li className="list-group-item">
 			<div className="media">
 				<div className="media-left media-middle">
 					<a href="#">
@@ -15,7 +13,5 @@ export default (props) => {
 					{props.description}
 				</div>
 			</div>
-
-		</li>
 	);
 }

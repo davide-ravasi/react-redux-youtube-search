@@ -9,7 +9,9 @@ export default class App extends Component {
       <div>
       	<h1>Youtube Video Searcher</h1>
       	<SearchBar />
-      	<VideoList />
+      	<div className="row">
+      		<VideoList />
+      	</div>
       </div>
     );
   }
