@@ -1,6 +1,5 @@
 export function selectBook(video) {
 
-	console.log('selectBook');
 
 
 	return {

@@ -10,10 +10,12 @@ class SearchBar extends Component {
 
 		this.state = {term: ''};
 
+
 		this.onSearchChange = this.onSearchChange.bind(this);
 		this.onSubmitForm = this.onSubmitForm.bind(this);
 
-		//this.props.searchWord('');
+		this.props.searchWord('banana');
+
 	}
 
 	onSearchChange(event) {
@@ -27,7 +29,7 @@ class SearchBar extends Component {
 	
 	render() {
 		return (
-			<div className="col-md-12">
+			<div className="col-md-12 search-bar">
 				<form className="form-inline" onSubmit={this.onSubmitForm}>
 					<div className="form-group">
 						<label className="sr-only" for="exampleInputEmail3">Seach video</label>

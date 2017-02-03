@@ -1,0 +1,52 @@
+body,html, .container {
+	background-color:#ccc !important;
+}
+
+.container {
+	padding-top:20px;
+}
+
+.search-bar {
+	margin: 5px 0 30px 0;
+}
+
+
+.list-group-item { 
+	margin-bottom: 10px !important;
+	-webkit-box-shadow: 3px 3px 2px 0px rgba(0,0,0,0.25);
+	-moz-box-shadow: 3px 3px 2px 0px rgba(0,0,0,0.25);
+	box-shadow: 3px 3px 2px 0px rgba(0,0,0,0.25);
+	cursor:pointer;
+    -webkit-transition: background-color 0.5s; /* Safari */
+    transition: background-color 0.5s;
+}
+
+.list-group-item:hover { 
+	background-color: #dedede;
+}
+
+.list-group-item .media-left {
+	padding-right: 10px;
+}
+
+.list-group-item:hover .media-left img {
+	-webkit-box-shadow: 3px 3px 2px 0px rgba(0,0,0,0.25);
+	-moz-box-shadow: 3px 3px 2px 0px rgba(0,0,0,0.25);
+	box-shadow: 3px 3px 2px 0px rgba(0,0,0,0.25);
+}
+
+h3, h5 {
+	color: #008CBA !important;
+}
+
+.media-body span {
+	color: #5b5b5b;
+}
+
+.video-detail {
+	background-color: #fff;
+	-webkit-box-shadow: 3px 3px 2px 0px rgba(0,0,0,0.25);
+	-moz-box-shadow: 3px 3px 2px 0px rgba(0,0,0,0.25);
+	box-shadow: 3px 3px 2px 0px rgba(0,0,0,0.25);
+	padding-top: 20px;	
+}
