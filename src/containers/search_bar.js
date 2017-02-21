@@ -52,3 +52,15 @@ function mapDispatchToProps(dispatch) {
 export default connect(null, mapDispatchToProps)(SearchBar);
 
 
+/*
+TO CONNECT COMPONENT WITH ACTION CREATOR
+
+1 - import { connect }
+2 - import action creator
+3 - import bind action creator
+3 - create function mapDispatchToProps
+4 - connect component with action
+
+*/
+
+
